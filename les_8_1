@@ -1,5 +1,5 @@
-# from random import randint
-#
+from random import randint
+from functools import reduce
 # # list_a = [i for i in range(5)]
 # # list_b = [i ** 2 for i in [1,2,3]]
 # # print(list_b, '\n', list_a)
@@ -70,7 +70,10 @@
 # nums = [3,5,6]
 # res = list(map(lambda x: str(x),nums))
 # print(res)
-#
 
-resul = filter(lambda x: x % 2 == 0, [1,2,3,4,5,6,7,8])
+resul = filter(lambda x: x.lower().find('k') == True, ['Kate', 'Kirya', 'Konstantin', 'Ak'])
 print(list(resul))
+reduce
+items = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+sum_all = reduce(lambda x,y: x * y, list(filter(lambda x: x % 3 ==0, items)))
+print(sum_all)
