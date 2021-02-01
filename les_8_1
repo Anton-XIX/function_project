@@ -1,0 +1,76 @@
+# from random import randint
+#
+# # list_a = [i for i in range(5)]
+# # list_b = [i ** 2 for i in [1,2,3]]
+# # print(list_b, '\n', list_a)
+#
+# #
+# # list_words = ['apple', 'cat', 'dog']
+# #
+# # list_rev = [i[::-1]+'ll' for i in list_words if 'a' in i]
+# #
+# # # print(list_rev)
+# #
+# #
+# # list_words = [{'serial_number': '11111', 'year': 1985 },
+# #               {'serial_number': '66', 'year': 1999 },
+# #               {'serial_number': '66632', 'year': 1954 }]
+# #
+# # #list_new = [i for i in list_words if i['year'] > 1900] #second variant
+# #
+# # list_new = [i for i in list_words if i[list(i.keys())[1]] > 1990]
+# # print(list_new)
+# #
+# #
+# # n= 3
+# # matrix = [[1 for j in range(n)] for i in range(n)]
+# # print(matrix)
+# #
+# #
+# #
+# # old_dict = {'aa':1, 'b': 2, 'cccc':3}
+# # new_dict = {key: value for value, key in old_dict.items()}
+# # print(new_dict)
+#
+# num_list = [1, 2, 4, 2, 11, 4, 11, 1, 1, 1, 2, 22, 444, 100, 11]
+#
+#
+# def count(nums):
+#     new_dict = {key: nums.count(key) for key in nums}
+#     return new_dict
+#
+#
+# print(count(num_list))
+#
+#
+# def x(nums):
+#     dict1 = {key: 0 for key in set(nums)}
+#     for i in nums:
+#         dict1[i] += 1
+#     return dict1
+#
+#
+# print(x(num_list))
+#
+# func = lambda name: print(f'Hello, {name}')
+# func('Anton')
+# names = ['a', 'b', 'c']
+
+
+
+# print(list(map(lambda names: [f'Hello {names}'], names)))
+# na = lambda name:[f'Hello, {i}' for i in names]
+# print(na(names))
+#
+#
+# result = map(lambda x: x**2,[1,2,3,4])
+# print(list(result))
+
+
+# nums = [3,5,6]
+# res = list(map(lambda x: str(x),nums))
+# print(res)
+#
+
+resul = filter(lambda x: x % 2 == 0, [1,2,3,4,5,6,7,8])
+print(list(resul))
